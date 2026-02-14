@@ -1,12 +1,24 @@
 @import 'vars';
 @import 'header';
+@import 'move-free';
+@import 'compare-bikes';
+@import 'details';
+@import 'contact-us';
 
 * {
   box-sizing: border-box;
   font-family: $font-global;
-}
-
-body {
   margin: 0;
   padding: 0;
+}
+
+a,
+button {
+  &:hover {
+    cursor: $cursor-custom-body;
+  }
+}
+
+.main {
+  background-color: $color-bg-main-dark;
 }

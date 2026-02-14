@@ -1,0 +1,87 @@
+.contacts {
+  padding: 0 120px 164px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: $color-text-global;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    max-width: 846px;
+    margin: 0;
+  }
+
+  &__form {
+    // width: 411px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 18px 28px;
+    background-color: #fff;
+    border: none;
+    border-radius: 100px; // Овальные поля как в макете
+    font-size: 16px;
+    outline: none;
+
+    &::placeholder {
+      color: #8c8c8c;
+    }
+  }
+
+  &__textarea {
+    border-radius: 30px; // Для текстового поля радиус поменьше
+    min-height: 140px;
+    resize: none;
+  }
+
+  &__btn {
+    padding: 16px 0;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: $cursor-custom-body; // Используем твой кастомный курсор
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  &__link,
+  &__address {
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+  }
+}

@@ -1,3 +1,12 @@
+/* stylelint-disable scss/dollar-variable-colon-space-after */
+
 $font-global: Poppins, sans-serif;
 $color-text-global: #fff;
 $color-global-nav: #1d1d1d;
+$cursor-custom-body:
+  url('../images/Mice.svg') 5 5,
+  pointer;
+$cursor-custom-nav:
+  url('../images/Cursor-Mouse-Mice.svg') 5 5,
+  pointer;
+$color-bg-main-dark: #1d1d1d;
