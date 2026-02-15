@@ -9,7 +9,7 @@
     text-align: center;
     color: $color-text-global;
     margin: 0;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
   }
 
   &__grid {
@@ -65,5 +65,37 @@
     line-height: 140%;
     letter-spacing: 0;
     color: $color-text-global;
+  }
+}
+
+@media (max-width: 744px) {
+  .compare {
+    padding: 0 176px 120px;
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .compare {
+    padding: 0 20px 92px;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+
+    &__grid {
+      gap: 40px;
+    }
   }
 }

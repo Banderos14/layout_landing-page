@@ -1,5 +1,6 @@
 .move-free {
-  padding: 120px 207px 164px 120px;
+  padding: 120px 207px 0 120px;
+  margin-bottom: 164px;
 
   &__container {
     display: flex;
@@ -26,5 +27,36 @@
     line-height: 140%;
     letter-spacing: 0;
     color: $color-text-global;
+  }
+}
+
+@media (max-width: 744px) {
+  .move-free {
+    padding: 120px 72px 0;
+    margin-bottom: 132px;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__text {
+      max-width: 288px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .move-free {
+    padding: 60px 20px 0;
+    margin-bottom: 92px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      align-self: start;
+      font-size: 32px;
+    }
   }
 }

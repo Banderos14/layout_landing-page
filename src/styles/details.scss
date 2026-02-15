@@ -1,5 +1,5 @@
 .details {
-  padding: 0 120px 180px;
+  padding: 0 120px;
 
   &__title {
     font-weight: 500;
@@ -103,7 +103,7 @@
   }
 
   &__action {
-    margin-top: 48px;
+    margin: 48px 0 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +128,66 @@
 
     &:active {
       box-shadow: 1px 4px 16px 0 $shadow-color-active;
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .details {
+    padding: 0 72px;
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 64px;
+    }
+
+    &__image-wrapper {
+      height: 187px;
+    }
+
+    &__action {
+      margin-bottom: 120px;
+    }
+
+    &__button {
+      width: 392px;
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .details {
+    padding: 0 20px;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+
+    &__grid {
+      gap: 40px;
+    }
+
+    &__image-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      height: auto;
+      gap: 20px;
+
+      &-img {
+        // чтобы элемент был квадратом всегда
+        aspect-ratio: 1 / 1;
+        justify-self: center;
+
+        // Сбрасываем десктопное растягивание на 2 колонки
+        &--left,
+        &--right {
+          grid-column: auto;
+        }
+      }
+    }
+
+    &__action {
+      margin: 40px 0 80px;
     }
   }
 }

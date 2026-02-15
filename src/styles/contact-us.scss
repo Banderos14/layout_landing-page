@@ -1,5 +1,6 @@
 .contacts {
-  padding: 0 120px 164px;
+  padding: 0 120px;
+  margin-bottom: 164px;
 
   &__title {
     font-weight: 600;
@@ -12,15 +13,16 @@
   }
 
   &__inner {
-    display: grid;
-    grid-template-columns: 411px 1fr;
-    gap: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
     max-width: 846px;
     margin: 0 auto;
   }
 
   &__form {
     width: 100%;
+    max-width: 411px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -60,6 +62,7 @@
 
   &__btn {
     padding: 14.5px 0;
+    margin: 16px 0;
     background-color: $color-text-global;
     color: $color-global-nav;
     border: none;
@@ -105,5 +108,42 @@
     text-decoration: none;
     font-style: normal;
     color: $color-text-global;
+  }
+}
+
+@media (max-width: 744px) {
+  .contacts {
+    margin-bottom: 102px;
+
+    &__title {
+      font-weight: 500;
+    }
+
+    &__inner {
+      grid-template-columns: 288px 1fr;
+      gap: 24px;
+      max-width: 549px;
+    }
+
+    &__btn {
+      margin: 16px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    padding: 0 20px;
+    margin-bottom: 120px;
+
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 48px;
+    }
   }
 }

@@ -210,3 +210,38 @@
     }
   }
 }
+
+@media (max-width: 744px) {
+  .header {
+    padding: 0 72px;
+
+    &__title {
+      font-size: 64px;
+    }
+
+    &__nav {
+      padding: 0 72px;
+    }
+  }
+
+  .nav {
+    &__link {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 20px;
+    background-position: 78% center;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__nav {
+      padding: 0 20px;
+    }
+  }
+}
