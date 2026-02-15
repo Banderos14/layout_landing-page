@@ -4,6 +4,7 @@
 @import 'compare-bikes';
 @import 'details';
 @import 'contact-us';
+@import 'footer-bike';
 
 * {
   box-sizing: border-box;
@@ -21,4 +22,9 @@ button {
 
 .main {
   background-color: $color-bg-main-dark;
+}
+
+// чтобы страница не скролила вниз при откытом меню
+body:has(.nav.header__nav--active) {
+  overflow: hidden;
 }

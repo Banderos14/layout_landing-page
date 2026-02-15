@@ -117,14 +117,13 @@
     border-radius: 100px;
     text-decoration: none;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
     transition: background-color 0.3s;
 
     &:hover {
       background-color: $color-text-global;
       cursor: $cursor-custom-body;
-      box-shadow: 1px 4px 16px 0 #e8e8f066;
+      box-shadow: 1px 4px 16px 0 $shadow-color;
     }
   }
 }

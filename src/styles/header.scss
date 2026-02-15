@@ -6,7 +6,8 @@
 .header {
   position: relative;
   overflow: hidden; // для меню-бургера
-  height: 711px;
+  // height: 711px;
+  height: 827px;
   background: url('../images/Cover_photo.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -50,9 +51,6 @@
     overflow: hidden;
     white-space: nowrap; // чтобы номер не прыгал по строкам
     margin-right: 0;
-    transition:
-      max-width 0.6s ease-in-out,
-      opacity 0.4s ease-in-out;
     text-decoration: none;
     font-weight: 700;
     font-size: 12px;
@@ -62,6 +60,9 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: $color-text-global;
+    transition:
+      max-width 0.6s ease-in-out,
+      opacity 0.4s ease-in-out;
 
     &--active {
       opacity: 1;
@@ -92,7 +93,7 @@
   }
 
   &__title {
-    margin: 300px 0 0;
+    margin: 350px 0 0;
     font-weight: 700;
     font-size: 80px;
     line-height: 100%;
@@ -201,6 +202,7 @@
   }
 
   &__logo,
+  .header__logo-img,
   &__close,
   &__link {
     &:hover {
