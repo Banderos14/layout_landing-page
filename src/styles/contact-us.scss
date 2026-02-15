@@ -31,22 +31,31 @@
     width: 100%;
     padding: 14px 16px;
     background-color: $color-text-global;
-    border: none;
+    border: 1px solid $color-text-global;
     border-radius: 100px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     outline: none;
-
-    &::placeholder {
-      color: $color-form-placeholder;
-    }
   }
 
   &__textarea {
     border-radius: 16px;
     min-height: 148px;
     resize: none;
+  }
+
+  &:hover {
+    border: 1px solid $color-border;
+  }
+
+  &:not(:placeholder-shown) {
+    // когда в инпуте появится текст
+    border: 1px solid $color-global-nav;
+  }
+
+  &::placeholder {
+    color: $color-form-placeholder;
   }
 
   &__btn {
@@ -65,6 +74,10 @@
 
     &:hover {
       box-shadow: 1px 4px 16px 0 $shadow-color;
+    }
+
+    &:active {
+      box-shadow: 1px 4px 16px 0 $shadow-color-active;
     }
   }
 

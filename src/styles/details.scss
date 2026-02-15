@@ -125,5 +125,9 @@
       cursor: $cursor-custom-body;
       box-shadow: 1px 4px 16px 0 $shadow-color;
     }
+
+    &:active {
+      box-shadow: 1px 4px 16px 0 $shadow-color-active;
+    }
   }
 }
