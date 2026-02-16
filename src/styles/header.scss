@@ -75,13 +75,34 @@
   .nav__close {
     background: none;
     border: none;
-    cursor: pointer;
     padding: 4px;
+    position: relative;
+    cursor: $cursor-custom-nav;
 
     img {
       display: block;
       width: 24px;
       height: 24px;
+      transition: opacity 0.8s ease;
+    }
+
+    .menu-icon-hover {
+      position: absolute;
+      top: 12%;
+      left: 12%;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      .menu-icon-default {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+      .menu-icon-hover {
+        opacity: 1;
+        transition: opacity 0.2s ease;
+      }
     }
   }
 
@@ -203,7 +224,6 @@
 
   &__logo,
   .header__logo-img,
-  &__close,
   &__link {
     &:hover {
       cursor: $cursor-custom-nav;

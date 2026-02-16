@@ -17,6 +17,7 @@
     justify-content: space-between;
     gap: 24px;
     max-width: 846px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -125,8 +126,33 @@
       max-width: 549px;
     }
 
+    &__form {
+      min-width: 100%;
+    }
+
     &__btn {
       margin: 16px 0;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 744px) {
+  .contacts {
+    padding: 0 20px;
+    margin-bottom: 120px;
+
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__form {
+      min-width: 100%;
     }
   }
 }
