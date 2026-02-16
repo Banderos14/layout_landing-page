@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 // Phone-bar
 const phoneBtn = document.querySelector('.header__phone-btn');
 const phoneLink = document.querySelector('.header__phone');
@@ -11,6 +12,7 @@ phoneBtn.addEventListener('click', () => {
     phoneLink.classList.add('header__phone--active');
   }
 });
+*/
 
 // Menu-burger
 const menuBtn = document.querySelector('.header__menu-btn');

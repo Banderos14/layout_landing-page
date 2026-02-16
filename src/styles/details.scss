@@ -220,8 +220,8 @@
         // чтобы элемент был квадратом всегда
         aspect-ratio: 1 / 1;
         justify-self: center;
+        height: 187px;
 
-        // Сбрасываем десктопное растягивание на 2 колонки
         &--left,
         &--right {
           grid-column: auto;
@@ -235,6 +235,21 @@
 
     &__action {
       margin: 40px 0 80px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .details {
+    &__image-wrapper {
+      &-img {
+        height: 130px;
+      }
+    }
+    &__item {
+      &--large {
+        gap: 16px;
+      }
     }
   }
 }

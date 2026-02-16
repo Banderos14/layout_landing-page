@@ -6,8 +6,7 @@
 .header {
   position: relative;
   overflow: hidden; // для меню-бургера
-  // height: 711px;
-  height: 827px;
+  min-height: 100vh;
   background: url('../images/Cover_photo.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -40,17 +39,11 @@
     gap: 32px;
   }
 
-  &__phone-wrapper {
-    display: flex;
-    align-items: center;
-  }
-
   &__phone {
     opacity: 0;
     max-width: 0;
     overflow: hidden;
     white-space: nowrap; // чтобы номер не прыгал по строкам
-    margin-right: 0;
     text-decoration: none;
     font-weight: 700;
     font-size: 12px;
@@ -61,12 +54,21 @@
     text-transform: uppercase;
     color: $color-text-global;
     transition:
-      max-width 0.6s ease-in-out,
-      opacity 0.4s ease-in-out;
+      max-width 0.6s ease,
+      opacity 0.4s ease;
+    margin-right: 20px;
+  }
 
-    &--active {
-      opacity: 1;
-      max-width: 200px;
+  &__phone-wrapper {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .header__phone {
+        opacity: 1;
+        max-width: 200px;
+        margin-right: 20px;
+      }
     }
   }
 
@@ -258,6 +260,23 @@
 
     &__title {
       font-size: 36px;
+    }
+
+    &__logo {
+      width: 130px;
+    }
+
+    &__actions {
+      gap: 24px;
+    }
+
+    &__phone-wrapper {
+      &:hover {
+        .header__phone {
+          max-width: 150px;
+          margin-right: 10px;
+        }
+      }
     }
 
     &__nav {
