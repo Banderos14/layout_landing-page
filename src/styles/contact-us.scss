@@ -1,5 +1,4 @@
 .contacts {
-  padding: 0 120px;
   margin-bottom: 164px;
 
   &__title {
@@ -16,9 +15,8 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    max-width: 846px;
     width: 100%;
-    margin: 0 auto;
+    padding: 0 294px 0 120px;
   }
 
   &__form {
@@ -114,7 +112,6 @@
 
 @media (max-width: 744px) {
   .contacts {
-    padding: 0 123px 0 72px;
     margin-bottom: 120px;
 
     &__title {
@@ -123,7 +120,7 @@
     }
 
     &__inner {
-      gap: 24px;
+      padding: 0 120px 0 72px;
     }
 
     &__form {
@@ -134,7 +131,6 @@
 
 @media (max-width: 480px) {
   .contacts {
-    padding: 0 20px;
     margin-bottom: 120px;
 
     &__title {
@@ -143,6 +139,7 @@
     }
 
     &__inner {
+      padding: 0 20px;
       flex-direction: column;
       gap: 48px;
     }
